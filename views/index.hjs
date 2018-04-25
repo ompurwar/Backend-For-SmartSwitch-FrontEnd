@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="aria-expanded">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ title }}</title>
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+
+<body style="margin: 0px;padding: 0px;">
+  <!--nav bar-->
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h4 class="text-white">Collapsed content</h4>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+
+              <ul class="nav nav-tabs bm-3" id="myTab" role="tablist">
+
+                <li class="nav-item" style="width: 50%">
+                  <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Login</a>
+                </li>
+
+                <li class="nav-item" style="width: 50%">
+                  <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Sign-Up</a>
+                </li>
+
+              </ul>
+
+
+              <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                  <div class="container">
+                    <form style="padding: 10%" class="needs-validation" novlaidate>
+                      <form style="padding: 10%" class="  ">
+                        <div class="form-group row">
+                          <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                          <div class="col float-right">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                          <div class="col float-right">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                          </div>
+                        </div>
+
+
+                        <center>
+                          <div class="form-group row ">
+                            <div class="col-sm-12">
+                              <button type="submit" class="btn btn-primary btn-lg btn-block ">Sign in</button>
+                            </div>
+                          </div>
+                        </center>
+
+                      </form>
+                  </div>
+
+
+                </div>
+
+                <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                  <div class="container">
+                    <form style="padding: 20px">
+                      <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                          <label for="validationDefaultUsername">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <label for="inputEmail4">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Confirm Password</label>
+                          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                          <label for="validationDefault01">First name</label>
+                          <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="validationDefault02">Last name</label>
+                          <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                        </div>
+
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">Street</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputState">State</label>
+                          <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputZip">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Let Me In!
+      </button>
+
+    </nav>
+  </div>
+
+
+
+
+
+
+  <!-- ShowGetDeviceMacPanle-->
+
+  <!-- ControlPanel-->
+  <center>
+    <button type="button" class="btn btn-primary" aria-pressed="true" data-bind="click: getdevices, attr:{disabled:disableGetDeviceBtn}">Get Devices Mac</button>
+    <br>
+    <br>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown" data-bind="style:{visibility:controleBtn}">
+      <button type="button" class="btn btn-secondary" data-bind="text:1, attr:{disabled:controlBtnSwitchDisabled},click:function(){setStates(1)}">1</button>
+      <button type="button" class="btn btn-secondary" data-bind="text:2, attr:{disabled:controlBtnSwitchDisabled},click:function(){setStates(2)},">2</button>
+
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bind="">
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" data-bind="foreach: data">
+          <a class="dropdown-item" href="#" data-bind="text:sta_mac, click: $parent.chooseDevice"></a>
+        </div>
+      </div>
+    </div>
+  </center>
+
+  <a href="#" data-bind="text:deviceId">Remove</a>
+
+  <ul data-bind="foreach: state">
+    <li>
+      Name at position
+      <span data-bind="text: $index"> </span>:
+      <span data-bind=""> </span>
+      <a href="#" data-bind="text:$data,click: $parent.fillGrid">Remove</a>
+    </li>
+  </ul>
+  <footer>
+    <center>
+      <p>A PROJECT BY OM PURWAR & PARASHU RAM</p>
+    </center>
+  </footer>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+  <script src="./javascripts/viewModel.js"></script>
+
+
+</body>
+
+</html>
